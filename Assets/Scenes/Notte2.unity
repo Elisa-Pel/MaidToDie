@@ -6898,6 +6898,7 @@ GameObject:
   m_Component:
   - component: {fileID: 988077157}
   - component: {fileID: 988077158}
+  - component: {fileID: 988077159}
   m_Layer: 0
   m_Name: BGmusic
   m_TagString: Untagged
@@ -7017,6 +7018,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &988077159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 988077156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75c0ec9d71e41e40b5a9ec34d56fa46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 988077158}
+  volumeSlider: {fileID: 542837747}
 --- !u!1 &991288476
 GameObject:
   m_ObjectHideFlags: 0
@@ -31437,6 +31452,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1678116784}
   - component: {fileID: 1678116785}
+  - component: {fileID: 1678116786}
   m_Layer: 0
   m_Name: EnemyScream
   m_TagString: Untagged
@@ -31556,6 +31572,20 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1678116786
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1678116783}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f75c0ec9d71e41e40b5a9ec34d56fa46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 1678116785}
+  volumeSlider: {fileID: 542837747}
 --- !u!1 &1683435017
 GameObject:
   m_ObjectHideFlags: 0
