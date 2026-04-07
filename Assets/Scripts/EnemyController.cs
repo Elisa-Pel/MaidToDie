@@ -28,7 +28,7 @@ public class EnemyController : MonoBehaviour
     private int currentWaypointIndex;
 
     public bool isWaiting;
-   
+
 
     [Header("AI")]
     [SerializeField] private bool inSight;
@@ -61,6 +61,12 @@ public class EnemyController : MonoBehaviour
     [SerializeField] private float damage;
     [SerializeField] private bool canTakeDamage = true;
 
+
+    [Header("Sounds")]
+    public AudioSource spotted;
+
+
+    private bool madeNoise;
 
 
     void Start()
@@ -122,6 +128,13 @@ public class EnemyController : MonoBehaviour
             RecordBreadcrumb();
             sawPlayer = true;
             isReturning = false;
+
+            if (!madeNoise)
+            {
+                spotted.PlayOneShot(spotted.clip);
+                madeNoise = true;
+            }
+
         }
         else if (!inRange && !isWaiting && !waitingToReturn && !isReturning|| inRange && !isWaiting && !sawPlayer && !waitingToReturn && !isReturning)
         {
@@ -129,11 +142,13 @@ public class EnemyController : MonoBehaviour
 
             sawPlayer = false;
             inFront = false;
+            madeNoise = false;
         }
         else if (inRange && !inSight && sawPlayer)
         {
             Search();
-            
+            StartCoroutine(DoNotScream());
+
         }
         else if (isWaiting || manager.gameIsOver)
         {
@@ -168,10 +183,12 @@ public class EnemyController : MonoBehaviour
     }
 
     private void Chase()
-    {
+    { 
         Vector3 direction = (target.position - transform.position).normalized;
         Vector2 finalDirection = ApplyObstacleAvoidance(direction);
         rb.linearVelocity = finalDirection * speed;
+
+        
     }
 
     private void Search()
@@ -182,7 +199,7 @@ public class EnemyController : MonoBehaviour
 
         float searchDistance = Vector2.Distance(transform.position, lastSeenPos);
 
-        if (searchDistance < 0.5f)
+        if (searchDistance < 0.1f)
         {
             sawPlayer = false;
         }
@@ -377,5 +394,12 @@ public class EnemyController : MonoBehaviour
 
     }
 
-
+    private IEnumerator DoNotScream()
+    {
+        yield return new WaitForSeconds(3);
+        if (!inSight)
+        {
+            madeNoise = false;
+        }
+    }
 }

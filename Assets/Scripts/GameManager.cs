@@ -28,6 +28,10 @@ public class GameManager : MonoBehaviour
 
     private bool notified;
 
+
+    [Header("Music")]
+    public AudioSource levelMusic;
+
     private void Start()
     {
         Time.timeScale = 1.0f;
@@ -36,6 +40,8 @@ public class GameManager : MonoBehaviour
         hasDied = false;
         getHome = false;
         notified = false;
+
+        levelMusic.Play();
     }
 
     private void Update()
