@@ -1,0 +1,70 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 3
+  tags:
+  - Trash
+  - Interactable
+  - SeePlayer
+  - Enemy
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - Walls
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Pavimento
+    uniqueID: 2896779859
+    locked: 0
+  - name: Pareti
+    uniqueID: 1258151735
+    locked: 0
+  - name: Tappeto
+    uniqueID: 2435770561
+    locked: 0
+  - name: Oggetti
+    uniqueID: 1435153013
+    locked: 0
+  - name: Schifo
+    uniqueID: 51990653
+    locked: 0
+  - name: Player
+    uniqueID: 122159637
+    locked: 0
+  - name: Railings
+    uniqueID: 1951513979
+    locked: 0
+  m_RenderingLayers:
+  - Default

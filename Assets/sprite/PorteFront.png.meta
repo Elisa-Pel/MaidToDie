@@ -1,0 +1,481 @@
+fileFormatVersion: 2
+guid: 0a45cea2f753ca34e9beb37c81f256ca
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 953990762503810387
+    second: PorteFront_0
+  - first:
+      213: -2147866763103867894
+    second: PorteFront_1
+  - first:
+      213: -5460901160850552708
+    second: PorteFront_2
+  - first:
+      213: -3593776416449044755
+    second: PorteFront_3
+  - first:
+      213: -4045118291113642767
+    second: PorteFront_4
+  - first:
+      213: -8261536024821056884
+    second: PorteFront_5
+  - first:
+      213: -7801991454920008297
+    second: PorteFront_6
+  - first:
+      213: -5944654499772327978
+    second: PorteFront_7
+  - first:
+      213: -5809721108182404971
+    second: PorteFront_8
+  - first:
+      213: -1073457951871341292
+    second: PorteFront_9
+  - first:
+      213: 5119333583177092834
+    second: PorteFront_10
+  - first:
+      213: 8117074937606054723
+    second: PorteFront_11
+  - first:
+      213: -1803279701705501131
+    second: PorteFront_12
+  - first:
+      213: 3186993046311033313
+    second: PorteFront_13
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: PorteFront_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 174
+        width: 30
+        height: 56
+      alignment: 9
+      pivot: {x: 0.06666667, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35d2b064b814d3d00800000000000000
+      internalID: 953990762503810387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_1
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 174
+        width: 29
+        height: 56
+      alignment: 9
+      pivot: {x: 0.06896552, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0c63501f8e3132e0800000000000000
+      internalID: -2147866763103867894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_2
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 174
+        width: 22
+        height: 56
+      alignment: 9
+      pivot: {x: 0.09090909, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c780cf9c35bf634b0800000000000000
+      internalID: -5460901160850552708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 174
+        width: 14
+        height: 56
+      alignment: 9
+      pivot: {x: 0.14285715, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: deed06fc367502ec0800000000000000
+      internalID: -3593776416449044755
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_4
+      rect:
+        serializedVersion: 2
+        x: 108
+        y: 174
+        width: 9
+        height: 56
+      alignment: 9
+      pivot: {x: 0.22222222, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1f47cbf985adcd7c0800000000000000
+      internalID: -4045118291113642767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteDoppieFront_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 115
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c8ab275c1c0295d80800000000000000
+      internalID: -8261536024821056884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_6
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 3
+        width: 7
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79d1cd4cb12c9b390800000000000000
+      internalID: -7801991454920008297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteDoppieFront_3
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 115
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6d794a48a38508da0800000000000000
+      internalID: -5944654499772327978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_8
+      rect:
+        serializedVersion: 2
+        x: 95
+        y: 14
+        width: 1
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 590f2beee69bf5fa0800000000000000
+      internalID: -5809721108182404971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_9
+      rect:
+        serializedVersion: 2
+        x: 102
+        y: 0
+        width: 16
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41de3612eaf4a11f0800000000000000
+      internalID: -1073457951871341292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteDoppieFront_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 56
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ee8fff35c68b0740800000000000000
+      internalID: 5119333583177092834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteDoppieFront_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 57
+        height: 56
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3432c3f46a4a5a070800000000000000
+      internalID: 8117074937606054723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteDoppieFront_2
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 56
+        width: 57
+        height: 57
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 536db2d5aa679f6e0800000000000000
+      internalID: -1803279701705501131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: PorteFront_13
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 4
+        height: 1
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1e9520b4a497a3c20800000000000000
+      internalID: 3186993046311033313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5b2e76be76d44c84e94afad6e1722b11
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      PorteDoppieFront_1: -8261536024821056884
+      PorteDoppieFront_2: -1803279701705501131
+      PorteDoppieFront_3: -5944654499772327978
+      PorteDoppieFront_4: 5119333583177092834
+      PorteDoppieFront_5: 8117074937606054723
+      PorteFront_0: 953990762503810387
+      PorteFront_1: -2147866763103867894
+      PorteFront_13: 3186993046311033313
+      PorteFront_2: -5460901160850552708
+      PorteFront_3: -3593776416449044755
+      PorteFront_4: -4045118291113642767
+      PorteFront_6: -7801991454920008297
+      PorteFront_8: -5809721108182404971
+      PorteFront_9: -1073457951871341292
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
