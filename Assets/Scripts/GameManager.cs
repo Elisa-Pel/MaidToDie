@@ -25,6 +25,7 @@ public class GameManager : MonoBehaviour
     public bool getHome;
     public GameObject pauseMenu;
     public GameObject doneCleaning;
+    public bool isPaused;
 
     private bool notified;
 

@@ -6,10 +6,22 @@ using UnityEngine.UI;
 
 public class NPC : MonoBehaviour
 {
-    public Dialogue dialogueData;
+    public GameManager manager;
+
+   
+    public NpcDialogueManager dialogueManager;
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText, nameText;
     public Image npcPortrait;
+
+    public int speed;
+
+    public Transform WaypointParent;
+    private Transform[] waypoints;
+    private int currentWaypointIndex;
+
+    private Dialogue dialogueData;
+    private Rigidbody2D rb;
 
     private int dialogueIndex;
     private bool isTalking;
@@ -19,7 +31,15 @@ public class NPC : MonoBehaviour
 
     void Start()
     {
-        
+        dialogueData = dialogueManager.GetCurrentDialogue();
+        rb = GetComponent<Rigidbody2D>();
+
+        waypoints = new Transform[WaypointParent.childCount];
+        for (int i = 0; i < WaypointParent.childCount; i++)
+        {
+            waypoints[i] = WaypointParent.GetChild(i);
+        }
+
     }
 
 
@@ -33,6 +53,8 @@ public class NPC : MonoBehaviour
         {
             NextLine();
         }
+
+        MoveToWaypoint();
     }
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -43,8 +65,20 @@ public class NPC : MonoBehaviour
         }
     }
 
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Player"))
+        {
+            inRange = false;
+        }
+    }
+
+
     void StartDialogue()
     {
+        dialogueData = dialogueManager.GetCurrentDialogue();
+
         isTalking = true;
         dialogueIndex = 0;
         dialoguePanel.SetActive(true);
@@ -55,6 +89,8 @@ public class NPC : MonoBehaviour
         StartCoroutine(TypeLine());
 
         hasTalked = true;
+
+        manager.isPaused = true;
     }
 
     void NextLine()
@@ -63,7 +99,7 @@ public class NPC : MonoBehaviour
         {
             StopAllCoroutines();
             dialogueText.SetText(dialogueData.lines[dialogueIndex].text);
-isTyping = false;
+         isTyping = false;
         }
         else if (++dialogueIndex < dialogueData.lines.Length)
         {
@@ -81,6 +117,13 @@ isTyping = false;
         isTalking = false;
         dialogueText.SetText("");
         dialoguePanel.SetActive(false);
+
+        manager.isPaused = false;
+        StartCoroutine(SpeakAgain());
+
+        dialogueManager.NextDialogue();
+
+        currentWaypointIndex = Mathf.Min(currentWaypointIndex + 1, waypoints.Length - 1);
     }
 
     IEnumerator TypeLine()
@@ -101,4 +144,24 @@ isTyping = false;
 
         isTyping = false;
     }
+
+    private IEnumerator SpeakAgain()
+    {
+        yield return new WaitForSeconds(3);
+        hasTalked = false;
+    }
+
+    void MoveToWaypoint()
+    {
+        Transform moveTo = waypoints[currentWaypointIndex];
+        Vector3 direction = (moveTo.position - transform.position).normalized;
+        rb.linearVelocity = direction * speed;
+
+        if (Vector2.Distance(transform.position, moveTo.position) < 0.1f)
+            {
+            rb.linearVelocity = new Vector2(0, 0) * speed;
+        }
+
+    }
+
 }

@@ -30,7 +30,7 @@ public class CleaningUp : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isInRange && !player.isKnockedBack)
+        if (isInRange && !player.isKnockedBack && !player.isChilling)
         {
             if (Input.GetKeyDown(KeyCode.E))
             {

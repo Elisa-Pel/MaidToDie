@@ -27,7 +27,7 @@ public class TakeKey : MonoBehaviour
     
     void Update()
     {
-        if (inRange && Input.GetKeyDown(KeyCode.E) && !Player.isKnockedBack)
+        if (inRange && Input.GetKeyDown(KeyCode.E) && !Player.isKnockedBack && !Player.isChilling)
         {
             keyTaken = true;
             Destroy(hitbox);

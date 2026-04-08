@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public bool isCleaning;
     public bool isMoving;
     public bool isHiding;
+    public bool isChilling;
 
     public GameManager manager;
 
@@ -42,7 +43,7 @@ public class PlayerController : MonoBehaviour
    
     void Update()
     {
-        if(!manager.gameIsOver){
+        if(!manager.gameIsOver && !manager.isPaused){
 
             if (!isKnockedBack && !isHiding)
             { Move(); }
@@ -51,7 +52,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
-      if(manager.hasDied|| isHiding)
+      if(manager.hasDied|| isHiding ||manager.isPaused)
         {
             rb.linearVelocity = new Vector2 (0f, 0f);
             isMoving = false;
@@ -95,6 +96,7 @@ public class PlayerController : MonoBehaviour
 
         }
 
+        isChilling = manager.isPaused;
         //Debug.Log(stamina);
     }
 

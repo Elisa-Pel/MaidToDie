@@ -122,7 +122,7 @@ public class EnemyController : MonoBehaviour
         //Debug.Log(distance);
 
 
-        if (inSight && inRange && inFront && !manager.gameIsOver)
+        if (inSight && inRange && inFront && !manager.gameIsOver && !manager.isPaused)
         {
             Chase();
             RecordBreadcrumb();
@@ -136,7 +136,7 @@ public class EnemyController : MonoBehaviour
             }
 
         }
-        else if (!inRange && !isWaiting && !waitingToReturn && !isReturning|| inRange && !isWaiting && !sawPlayer && !waitingToReturn && !isReturning)
+        else if (!inRange && !isWaiting && !waitingToReturn && !isReturning && !manager.isPaused || inRange && !isWaiting && !sawPlayer && !waitingToReturn && !isReturning && !manager.isPaused)
         {
             StartCoroutine(WaitToReturn());
 
@@ -150,7 +150,7 @@ public class EnemyController : MonoBehaviour
             StartCoroutine(DoNotScream());
 
         }
-        else if (isWaiting || manager.gameIsOver)
+        else if (isWaiting || manager.gameIsOver || manager.isPaused)
         {
             rb.linearVelocity = new Vector2(0, 0) * speed;
         }

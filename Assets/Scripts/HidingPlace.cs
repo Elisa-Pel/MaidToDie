@@ -28,7 +28,7 @@ public class HidingPlace : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (inRange && Input.GetKeyDown(KeyCode.E) && !Player.isKnockedBack)
+        if (inRange && Input.GetKeyDown(KeyCode.E) && !Player.isKnockedBack && !Player.isChilling)
         {
             if (!Player.isHiding && isEmpty)
             {
