@@ -16,10 +16,11 @@ public class CleaningUp : MonoBehaviour
     public GameObject progressBarBase;
 
     private float cleaningProgress = 0;
-    [SerializeField] private float maxCleaningProgress;
+    public float maxCleaningProgress;
    
     private bool isBeingCleaned;
-    
+
+    public AudioSource sweeping;
 
     // Start is called before the first frame update
     void Start()
@@ -44,6 +45,7 @@ public class CleaningUp : MonoBehaviour
                     player.isCleaning = true;
                     isBeingCleaned = true;
                     Prompt.SetActive(false);
+                    sweeping.Play();
 
                 }
                 //Debug.Log("E");
@@ -64,7 +66,10 @@ public class CleaningUp : MonoBehaviour
             Prompt.SetActive(true);
         }
 
-      
+      if (!isBeingCleaned && !player.isCleaning)
+        {
+            sweeping.Stop();
+        }
 
     }
 
@@ -90,7 +95,7 @@ public class CleaningUp : MonoBehaviour
             isBeingCleaned = false;
             cleaningProgress = 0;
             UpdateProgressBar();
-
+            sweeping.Stop();
 
             if (Prompt == null)
             {
@@ -116,6 +121,7 @@ public class CleaningUp : MonoBehaviour
             CleanUp();
 
             Prompt.SetActive(false);
+            sweeping.Play();
         }
     }
 
@@ -129,6 +135,7 @@ public class CleaningUp : MonoBehaviour
             gameManager.CleanedTrash();
             progressBarBase.SetActive(false);
             cleaningProgress = 0;
+            sweeping.Stop();
         }
 
     }

@@ -4,7 +4,7 @@ public class EndGame : MonoBehaviour
 {
     public GameManager manager;
     public GameObject Roze;
-
+    
 
     void Update()
     {
@@ -20,6 +20,9 @@ public class EndGame : MonoBehaviour
         {
             manager.winScreen.SetActive(true);
             Time.timeScale = 0.0f;
+            manager.levelMusic.Stop();
+            manager.winMusic.Play();
+           
         }
     }
 }

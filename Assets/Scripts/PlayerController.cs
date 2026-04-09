@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour
     public bool isChilling;
 
     public GameManager manager;
-
+    public AudioSource hurt;
 
     [Header("Movement")]
     [SerializeField] private float speed;
@@ -169,6 +169,8 @@ public class PlayerController : MonoBehaviour
             isCleaning = false;
             isMoving = false;
 
+            
+
         }
 
     }
@@ -178,6 +180,7 @@ public class PlayerController : MonoBehaviour
         isKnockedBack = true;
         yield return new WaitForSeconds(0.3f);
         isKnockedBack = false;
+        hurt.PlayOneShot(hurt.clip);
 
     }
 

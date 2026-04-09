@@ -32,6 +32,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Music")]
     public AudioSource levelMusic;
+    public AudioSource finalNotif;
+    public AudioSource winMusic;
+    public AudioSource defeatMusic;
 
     private void Start()
     {
@@ -113,6 +116,8 @@ public class GameManager : MonoBehaviour
         yield return new WaitForSeconds(1.5f);
         gameOverScreen.SetActive(true);
         Time.timeScale = 0.0f;
+        levelMusic.Stop();
+        defeatMusic.Play();
     }
 
     private void WinGame()
@@ -138,6 +143,9 @@ public class GameManager : MonoBehaviour
         {
             winScreen.SetActive(true);
             Time.timeScale = 0.0f;
+            winMusic.Play();
+            levelMusic.Stop();
+
         }
 
     }
@@ -146,6 +154,7 @@ public class GameManager : MonoBehaviour
     {
         notified = true;
         doneCleaning.SetActive(true);
+        finalNotif.PlayOneShot(finalNotif.clip);
 
         yield return new WaitForSeconds(1.5f);
 

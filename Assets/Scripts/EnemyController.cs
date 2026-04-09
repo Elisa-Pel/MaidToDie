@@ -65,7 +65,7 @@ public class EnemyController : MonoBehaviour
 
     [Header("Sounds")]
     public AudioSource spotted;
-
+    public AudioSource hit;
 
     private bool madeNoise;
 
@@ -352,8 +352,11 @@ public class EnemyController : MonoBehaviour
                 manager.UpdateLifeBar();
                 StartCoroutine(WaitForDamage());
                 StartCoroutine(PassTrough());
+
             }
-        }
+
+            hit.PlayOneShot(hit.clip);
+}
 
         if(other.gameObject.CompareTag("Enemy"))
         {
