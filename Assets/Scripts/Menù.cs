@@ -75,6 +75,9 @@ public class Menù : MonoBehaviour
         Time.timeScale = 1.0f;
     }
 
-
+    public void Progress()
+    {
+        PlayerPrefs.SetInt("CurrentScene", PlayerPrefs.GetInt("CurrentScene") + 1);
+    }
 }
 
