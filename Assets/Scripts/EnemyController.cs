@@ -8,6 +8,7 @@ public class EnemyController : MonoBehaviour
 {
     private Rigidbody2D rb;
     private Animator anim;
+    private Collider2D col;
 
     public float velocityX;
     public float velocityY;
@@ -72,6 +73,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        col = GetComponent<Collider2D>();
         target = GameObject.Find("Player").transform;
         anim = GetComponentInChildren<Animator>();
 
@@ -154,9 +156,9 @@ public class EnemyController : MonoBehaviour
         {
             rb.linearVelocity = new Vector2(0, 0) * speed;
         }
-        else if (isReturning)
+        else if (isReturning && !manager.isPaused)
         {
-            if (CanSeeWaypoint())
+            if (CanSeeWaypoint() )
             {
                 breadcrumbs.Clear();
                 MoveToWaypoint();
@@ -340,16 +342,22 @@ public class EnemyController : MonoBehaviour
         }
 
     }
-    private void OnCollisionEnter2D(Collision2D collision)
+    private void OnCollisionEnter2D(Collision2D other)
     {
-        if (collision.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player")
         {
             //Debug.Log("Colpito Player");
             if (canTakeDamage) { 
             manager.Life = manager.Life - damage;
                 manager.UpdateLifeBar();
                 StartCoroutine(WaitForDamage());
+                StartCoroutine(PassTrough());
             }
+        }
+
+        if(other.gameObject.CompareTag("Enemy"))
+        {
+            StartCoroutine(PassTrough());
         }
 
     }
@@ -391,6 +399,7 @@ public class EnemyController : MonoBehaviour
         anim.SetFloat("yVelocity", rb.linearVelocity.y);
         anim.SetBool("isWaiting", isWaiting);
         anim.SetBool("isDead", manager.gameIsOver);
+        anim.SetBool("isPaused", manager.isPaused);
 
     }
 
@@ -401,5 +410,12 @@ public class EnemyController : MonoBehaviour
         {
             madeNoise = false;
         }
+    }
+
+    private IEnumerator PassTrough()
+    {
+        col.enabled = false;
+        yield return new WaitForSeconds(2);
+        col.enabled = true;
     }
 }

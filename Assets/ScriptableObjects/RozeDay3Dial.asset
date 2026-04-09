@@ -1,0 +1,75 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5334d405a9515042a12be3bed770915, type: 3}
+  m_Name: RozeDay3Dial
+  m_EditorClassIdentifier: 
+  lines:
+  - npcName: Roze
+    text: "Everette! Dove sei stata?! Perch\xE8 sei uscita con quelle bestie in giro?"
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: Stavo... Pulendo? Ho appena iniziato, vorrei arriare almeno al primo stipendio
+      prima di essere buttata per strada.
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: "Di cosa stai parlando?! Hai visto cosa c'\xE8 l\xEC fuori? E tu hai paura...
+      di essere licenziata?!"
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: Everette dobbiamo andarcene via di qui.
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: "Questi mostri, questa oscurit\xE0, nulla di questo \xE8 normale!"
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: ...
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: Capisco stringere i denti e sopportare orari assurdi e le macchie di ""fango""
+      sui tappeti...
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: "Ma qui c'\xE8 in gioco la tua vita!"
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: Hai ragione.
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: Allora and-
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: Ma non posso venire con te.
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: ...?!
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: Non ho un centesimo, senza questo lavoro finirei per strada.
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Everette
+    text: "Non me ne andr\xF2 di qui senza almeno uno stipendio, non quando ho un
+      letto in cui dormire assicurato."
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: Everette-!
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: No, sai cosa? Vuoi essere fatta a pezzi da un demone? Fai pure!
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: "Ma non rester\xF2 qui a guardare."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: ...
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  typingSpeed: 0.05
+  voice: {fileID: 0}

@@ -13,6 +13,7 @@ public class TakeKey : MonoBehaviour
     public TextMeshProUGUI promptText;
 
     public GameObject keyNotif;
+    public AudioSource keySound;
 
     public bool keyTaken;
     private bool inRange;
@@ -33,6 +34,8 @@ public class TakeKey : MonoBehaviour
             Destroy(hitbox);
             sparkle.SetActive(false);
             Prompt.SetActive(false);
+
+            keySound.PlayOneShot(keySound.clip);
 
             StartCoroutine(KeyType());
         }

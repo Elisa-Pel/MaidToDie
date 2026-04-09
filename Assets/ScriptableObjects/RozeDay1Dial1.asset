@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5334d405a9515042a12be3bed770915, type: 3}
+  m_Name: RozeDay1Dial1
+  m_EditorClassIdentifier: 
+  lines:
+  - npcName: Roze
+    text: Benvenuta!
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: Tu devi essere Everette, sono stata informata del tuo arrivo.
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: "S\xEC, buongiorno, \xE8 un piacere conoscerla, signora... uhm..."
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: "Il mio nome \xE8 Roze, dammi pure del tu. Lord Lockwood mi ha incaricata
+      di darti il benvenuto."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: "Come gi\xE0 saprai il tuo lavoro consister\xE0 nel tenere pulita la villa."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: "S\xEC, certo, sono pronta a iniziare!"
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: "Lord Lockwood \xE8 un uomo esigente, spero tu sia all'altezza."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: "Far\xF2 del mio meglio, mi creda- uhm, credimi!   ...Ho davvero bisogno
+      di questo lavoro."
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: "Buono a sapersi! Ora seguimi, ti porto nell'ala della servit\xF9."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  typingSpeed: 0.05
+  voice: {fileID: 0}

@@ -1,0 +1,46 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f5334d405a9515042a12be3bed770915, type: 3}
+  m_Name: RozeDay1Dial3
+  m_EditorClassIdentifier: 
+  lines:
+  - npcName: Roze
+    text: "Dunque, questa qui a sinistra \xE8 la nostra stanza. Sentiti libera di
+      rilassarti qui dentro quando avrai finito di pulire."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: "Dietro di me c'\xE8 la cucina, ho chiuso la porta quando i cuochi se ne
+      sono andati, ma troverai la chiave a portata di mano."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: "C'\xE8 un bel disordine l\xEC dentro, ti prego di occupartene al pi\xF9
+      presto."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: Subito!
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: Bene! Penso di averti detto tutto. Di nuovo benvenuta, spero che andremo
+      d'accordo.
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Everette
+    text: "Il sentimento \xE8 reciproco, grazie per avermi fatto fare un giro."
+    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+  - npcName: Roze
+    text: "Non c'\xE8 bisogno di ringraziare, sto solo facendo il mio lavoro."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  - npcName: Roze
+    text: "Ora, ti prego di scusarmi ma ho delle faccende da sbrigare in citt\xE0.
+      A pi\xF9 tardi, Everette."
+    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+  typingSpeed: 0.05
+  voice: {fileID: 0}

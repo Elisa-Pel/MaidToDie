@@ -69,9 +69,9 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0.016131297, y: -0.8925637}
-  m_Size: {x: 1.7582774, y: 0.9107131}
-  m_Direction: 1
+  m_Offset: {x: 0.018530846, y: -0.124364495}
+  m_Size: {x: 1.7989483, y: 2.4471176}
+  m_Direction: 0
 --- !u!114 &4771624088531934239
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -89,6 +89,8 @@ MonoBehaviour:
   Player: {fileID: 0}
   Prompt: {fileID: 0}
   promptText: {fileID: 0}
+  openDoor: {fileID: 0}
+  closedDoor: {fileID: 0}
 --- !u!1 &1848748681069373177
 GameObject:
   m_ObjectHideFlags: 0
@@ -254,6 +256,7 @@ MonoBehaviour:
   Prompt: {fileID: 0}
   promptText: {fileID: 0}
   keyNotif: {fileID: 0}
+  keySound: {fileID: 0}
   keyTaken: 0
 --- !u!1 &4620313836697517630
 GameObject:

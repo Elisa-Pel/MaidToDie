@@ -16,7 +16,7 @@ public class CleaningUp : MonoBehaviour
     public GameObject progressBarBase;
 
     private float cleaningProgress = 0;
-    public float maxCleaningProgress;
+    [SerializeField] private float maxCleaningProgress;
    
     private bool isBeingCleaned;
     
@@ -87,7 +87,12 @@ public class CleaningUp : MonoBehaviour
         {
             isInRange = false;
 
-            if(Prompt == null)
+            isBeingCleaned = false;
+            cleaningProgress = 0;
+            UpdateProgressBar();
+
+
+            if (Prompt == null)
             {
                 return;
             }

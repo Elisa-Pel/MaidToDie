@@ -52,7 +52,7 @@ public class GameManager : MonoBehaviour
             GameOver();
         }
 
-        if (Input.GetKeyUp(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape))
 
         {
 
@@ -60,8 +60,13 @@ public class GameManager : MonoBehaviour
 
         }
 
+        if (Input.GetKeyDown(KeyCode.H))
+        {
+            getHome = true;
+        }
+
         WinGame();
-    }
+        }
 
     public void Awake()
     {

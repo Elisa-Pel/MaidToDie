@@ -20,6 +20,10 @@ public class NpcDialogueManager : MonoBehaviour
 
     public void NextDialogue()
     {
-        currentIndex = (currentIndex + 1) % dialogues.Length;
+        currentIndex = (currentIndex + 1);
+        if (currentIndex < dialogues.Length)
+        {
+            return;
+        }
     }
 }

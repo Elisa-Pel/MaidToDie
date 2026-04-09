@@ -16,6 +16,9 @@ public class OpenDoor : MonoBehaviour
     public GameObject Prompt;
     public TextMeshProUGUI promptText;
 
+    public AudioSource openDoor;
+    public AudioSource closedDoor;
+
     void Start()
     {
         isOpen = false;
@@ -31,10 +34,12 @@ public class OpenDoor : MonoBehaviour
             isOpen = true;
             Collider.SetActive(false);
             Prompt.SetActive(false);
+            openDoor.PlayOneShot(openDoor.clip);
         }
         else if(inRange && Input.GetKeyDown(KeyCode.E) && !Player.isKnockedBack && !Key.keyTaken)
         {
         StartCoroutine(CannotOpen());
+            closedDoor.PlayOneShot(closedDoor.clip);
         }
 
         HandAnimation();

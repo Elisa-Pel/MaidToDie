@@ -16,6 +16,7 @@ public class HidingPlace : MonoBehaviour
     public GameObject SeePlayer;
     public PlayerController Player;
     public GameObject playerAnim;
+    public AudioSource doorSound;
 
     public bool isEmpty;
 
@@ -54,6 +55,8 @@ public class HidingPlace : MonoBehaviour
 
                 promptText.SetText("[E] Nasconditi");
             }
+
+            doorSound.PlayOneShot(doorSound.clip);
 
         }
 
