@@ -6,6 +6,7 @@ public class Menù : MonoBehaviour
 {
     public TextMeshProUGUI continueText;
     public GameObject errorText;
+    public AudioSource sfx;
   
 
     private void Start()
@@ -78,6 +79,11 @@ public class Menù : MonoBehaviour
     public void Progress()
     {
         PlayerPrefs.SetInt("CurrentScene", PlayerPrefs.GetInt("CurrentScene") + 1);
+    }
+
+    public void SFX()
+    {
+        sfx.PlayOneShot(sfx.clip);
     }
 }
 

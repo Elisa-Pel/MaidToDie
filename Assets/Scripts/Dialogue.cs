@@ -12,6 +12,6 @@ public class DialogueLine
 public class Dialogue : ScriptableObject
 {
     public DialogueLine[] lines;
-    public float typingSpeed = 0.05f;
-    public AudioSource voice;
+    public float typingSpeed = 0.03f;
+
 }

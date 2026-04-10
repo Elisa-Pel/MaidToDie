@@ -15,6 +15,5 @@ MonoBehaviour:
   lines:
   - npcName: Roze
     text: Da questa parte!
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   typingSpeed: 0.05
-  voice: {fileID: 0}

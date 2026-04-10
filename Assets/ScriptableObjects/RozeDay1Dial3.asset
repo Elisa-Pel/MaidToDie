@@ -16,31 +16,30 @@ MonoBehaviour:
   - npcName: Roze
     text: "Dunque, questa qui a sinistra \xE8 la nostra stanza. Sentiti libera di
       rilassarti qui dentro quando avrai finito di pulire."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Roze
     text: "Dietro di me c'\xE8 la cucina, ho chiuso la porta quando i cuochi se ne
       sono andati, ma troverai la chiave a portata di mano."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Roze
     text: "C'\xE8 un bel disordine l\xEC dentro, ti prego di occupartene al pi\xF9
       presto."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Everette
     text: Subito!
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -4778476433072302809, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Roze
     text: Bene! Penso di averti detto tutto. Di nuovo benvenuta, spero che andremo
       d'accordo.
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Everette
     text: "Il sentimento \xE8 reciproco, grazie per avermi fatto fare un giro."
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -4778476433072302809, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Roze
     text: "Non c'\xE8 bisogno di ringraziare, sto solo facendo il mio lavoro."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Roze
     text: "Ora, ti prego di scusarmi ma ho delle faccende da sbrigare in citt\xE0.
       A pi\xF9 tardi, Everette."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   typingSpeed: 0.05
-  voice: {fileID: 0}

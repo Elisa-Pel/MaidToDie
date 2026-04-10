@@ -15,32 +15,31 @@ MonoBehaviour:
   lines:
   - npcName: Roze
     text: Benvenuta!
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Roze
     text: Tu devi essere Everette, sono stata informata del tuo arrivo.
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Everette
     text: "S\xEC, buongiorno, \xE8 un piacere conoscerla, signora... uhm..."
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -4778476433072302809, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Roze
     text: "Il mio nome \xE8 Roze, dammi pure del tu. Lord Lockwood mi ha incaricata
       di darti il benvenuto."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Roze
     text: "Come gi\xE0 saprai il tuo lavoro consister\xE0 nel tenere pulita la villa."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Everette
     text: "S\xEC, certo, sono pronta a iniziare!"
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -4778476433072302809, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Roze
     text: "Lord Lockwood \xE8 un uomo esigente, spero tu sia all'altezza."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   - npcName: Everette
     text: "Far\xF2 del mio meglio, mi creda- uhm, credimi!   ...Ho davvero bisogno
       di questo lavoro."
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -4778476433072302809, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Roze
     text: "Buono a sapersi! Ora seguimi, ti porto nell'ala della servit\xF9."
-    portrait: {fileID: 3240579374830482051, guid: ae00ccab8a13ee248873b3c10ef9a6a1, type: 3}
+    portrait: {fileID: -2297260800298721466, guid: d99ab1f253c633e4ca69de9aa11c8329, type: 3}
   typingSpeed: 0.05
-  voice: {fileID: 0}

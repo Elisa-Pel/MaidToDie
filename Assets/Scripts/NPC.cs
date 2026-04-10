@@ -13,6 +13,7 @@ public class NPC : MonoBehaviour
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText, nameText;
     public Image npcPortrait;
+    public AudioSource voice;
 
     public int speed;
     public float isfacing;
@@ -179,6 +180,7 @@ public class NPC : MonoBehaviour
         foreach (char letter in line)
         {
             dialogueText.text += letter;
+            voice.PlayOneShot(voice.clip);
             yield return new WaitForSeconds(dialogueData.typingSpeed);
 
         }

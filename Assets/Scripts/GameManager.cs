@@ -35,6 +35,7 @@ public class GameManager : MonoBehaviour
     public AudioSource finalNotif;
     public AudioSource winMusic;
     public AudioSource defeatMusic;
+    public AudioSource deathSound;
 
     private void Start()
     {
@@ -113,6 +114,7 @@ public class GameManager : MonoBehaviour
     {
         yield return new WaitForSeconds(0.3f);
         hasDied = true;
+        deathSound.Play();
         yield return new WaitForSeconds(1.5f);
         gameOverScreen.SetActive(true);
         Time.timeScale = 0.0f;

@@ -15,30 +15,29 @@ MonoBehaviour:
   lines:
   - npcName: Everette
     text: AH-?!!!!?
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: "Oh mio dio... Cos'\xE8 quella cosa...?"
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: "Mi avr\xE0 visto?!"
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: ...
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: Ok... ok... OK!
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: Ho un lavoro da fare!
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: Qualunque cosa sia quel mostro...
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: "Aspetter\xF2 che si allontani e lo aggirer\xF2."
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   - npcName: Everette
     text: Non posso permettermi di essere licenziata per non aver pulito come dovevo!
-    portrait: {fileID: 3973922817019083983, guid: efac32f309ffd7a4cabfd20f245ddf54, type: 3}
+    portrait: {fileID: -6762264116412386452, guid: 7a79f8d52aedf5d4f84f669033c04dd9, type: 3}
   typingSpeed: 0.05
-  voice: {fileID: 0}

@@ -10,6 +10,7 @@ public class MonoLogue : MonoBehaviour
     public GameObject dialoguePanel;
     public TextMeshProUGUI dialogueText, nameText;
     public Image npcPortrait;
+    public AudioSource voice;
 
     private Dialogue dialogueData;
     private int dialogueIndex;
@@ -100,6 +101,7 @@ public class MonoLogue : MonoBehaviour
         foreach (char letter in line)
         {
             dialogueText.text += letter;
+            voice.PlayOneShot(voice.clip);
             yield return new WaitForSeconds(dialogueData.typingSpeed);
 
         }
